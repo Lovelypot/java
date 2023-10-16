@@ -1,0 +1,21 @@
+import java.io.*;                                               
+public class Input_Computation                    {                 
+                                                          
+    private static BufferedReader num = new BufferedReader(new InputStreamReader(System.in));     
+  public static void main(String []args)throws IOException            
+    {                                                          
+        System.out.print("Enter a First Number: ");                     
+        int FirstN = Integer.parseInt(num.readLine());                      
+        
+        System.out.print("Enter a Second Number: ");                   
+        int SecondN = Integer.parseInt(num.readLine());                      
+        double sum = FirstN + SecondN;                          
+        double diff = FirstN - SecondN;                             
+        double prod = FirstN * SecondN;                          
+        double quot = FirstN / SecondN;                            
+       System.out.println("The sum is: "+sum);                 
+       System.out.println("The difference is: "+diff);                 
+       System.out.println("The product is: "+prod);                    
+       System.out.println("The quotient is: "+quot);                   
+    }                                                          
+}
